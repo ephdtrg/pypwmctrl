@@ -8,7 +8,7 @@ import sys
 
 FAN_PIN = 21
 WAIT_TIME = 1
-PWM_FREQ = 25
+PWM_FREQ = 15
 
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(FAN_PIN, GPIO.OUT, initial=GPIO.LOW)

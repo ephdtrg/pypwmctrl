@@ -8,15 +8,15 @@ import sys
 # Configuration
 FAN_PIN = 21  # BCM pin used to drive transistor's base
 WAIT_TIME = 1  # [s] Time to wait between each refresh
-FAN_MIN = 35  # [%] Fan minimum speed.
-PWM_FREQ = 25  # [Hz] Change this value if fan has strange behavior
+FAN_MIN = 75  # [%] Fan minimum speed.
+PWM_FREQ = 15  # [Hz] Change this value if fan has strange behavior
 
 # Configurable temperature and fan speed steps
-tempSteps = [50, 70]  # [°C]
-speedSteps = [0, 100]  # [%]
+tempSteps = [65, 80]  # [°C]
+speedSteps = [75, 100]  # [%]
 
 # Fan speed will change only of the difference of temperature is higher than hysteresis
-hyst = 1
+hyst = 2
 
 # Setup GPIO pin
 GPIO.setmode(GPIO.BCM)
